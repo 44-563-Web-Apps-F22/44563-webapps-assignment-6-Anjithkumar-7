@@ -28,7 +28,6 @@
     <script>
         let correct = 0;
         let wrong = 0;
-        let count = 0;
         function checkGuess() {
             console.log("Fetching Values")
             musician = document.getElementById("form1_musician").value
@@ -37,7 +36,6 @@
             output = document.getElementById("result")
             if (musician == nick) {
                 alert("You got it right")
-                count = 0
                 correct = correct + 1
                 output.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
             } else {
@@ -48,19 +46,7 @@
             }
 
         }
-        function resolveForm() {
-            console.log("Getting form values")
-            age = document.getElementById("form1_age").value
-            nick = document.getElementById("form1_nick").value
-            confirmed = confirm("Are these the values? " + age + " and " + nick)
-
-            out = document.getElementById("result")
-            if (confirmed) {
-                out.innerHTML = "Values were confirmed"
-            } else {
-                out.innerHTML = "Values were not confirmed"
-            }
-        }
+        
     </script>
 
 </body>
