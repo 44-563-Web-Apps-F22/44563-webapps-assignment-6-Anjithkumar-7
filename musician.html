@@ -23,16 +23,17 @@
     <div class="container">
         <form>
             <div class="mb-3">
-                <label for="form1_musician">Enter the secret musician name</label>
-                <input type="password" id="form1_musician" name="form1_musician" value="John Lennon"> <br>
+                <label for="form1_musician" class="form-label">Enter the secret musician name</label>
+                <input type="password" id="form1_musician" name="form1_musician" value="John Lennon"
+                    class="form-control"> <br>
             </div>
             <div class="mb-3">
-                <label for="form1_nick">Guess the Musician </label>
-                <input type="text" id="form1_nick" name="form1_nick" autofocus> <br>
+                <label for="form1_nick" class="form-label">Guess the Musician </label>
+                <input type="text" id="form1_nick" name="form1_nick" autofocus class="form-control"> <br>
             </div>
             <div>
-            <input type="button" onclick="checkGuess()" value="Check the guess">
-        </div>
+                <input type="button" onclick="checkGuess()" value="Check the guess">
+            </div>
         </form>
     </div>
 
