@@ -30,12 +30,10 @@
     <script>
         let correct = 0;
         let wrong = 0;
-        
         function checkGuess() {
             console.log("Fetching Values")
             musician = document.getElementById("form1_musician").value
             nick = document.getElementById("form1_nick").value
-let count=0;
             output = document.getElementById("result")
             if (musician == nick) {
                 alert("You got it right")
@@ -43,28 +41,27 @@ let count=0;
                 output.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
             } else {
                 alert("Wrong Musician")
-                count = count + 1
                 wrong = wrong + 1
                 output.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
             }
 
         }
 
-        let useImage =1;
-        function swapImage(){
+        let useImage = 1;
+        function swapImage() {
             image = document.getElementById("image")
-            switch(useImage){
+            switch (useImage) {
                 case 1:
-                    image.src="Mantids.jpg"
-                    useImage = useImage +1
+                    image.src = "Mantids.jpg"
+                    useImage = useImage + 1
                     break
                 case 2:
                     image.src = "Ulhers.jpg"
-                    useImage = useImage+1
+                    useImage = useImage + 1
                     break
                 case 3:
                     image.src = "Ants.jpg"
-                    useImage = useImage+1
+                    useImage = useImage + 1
                     break
                 default:
                     break
