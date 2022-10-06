@@ -47,6 +47,7 @@
     <script>
         let correct = 0;
         let wrong = 0;
+        let count =0;
         function checkGuess() {
             console.log("Fetching Values")
             musician = document.getElementById("form1_musician").value
@@ -58,10 +59,17 @@
                 output.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
             } else {
                 alert("Wrong Musician")
+                count = count+1
                 wrong = wrong + 1
                 output.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
+                if(count>=3)
+                  gameOver()
             }
 
+        }
+
+        function gameOver(){
+            alert("Sorry, game over.")
         }
 
         let useImage = 1;
